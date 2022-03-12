@@ -5,7 +5,6 @@ class Node():
   def __init__(self,data):
     self.data = data
     self.next = None
-    
 class LinkedList():
 
   def __init__(self):
@@ -28,7 +27,6 @@ class LinkedList():
     new_node.next = self.head 
     self.head = new_node
     
-
     self.length += 1
 
   def insert(self,index,data):

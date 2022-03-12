@@ -1,4 +1,22 @@
 def func(mylist):
+  '''
+  add each character to a hashtable "seen"
+  as soon as we see one again, return it
+  '''
+
+  seen = []
+
+  for i in range(len(mylist)):
+    if mylist[i] in seen:
+      return mylist[i]
+    
+    seen.append(mylist[i])
+
+  return "none"
+
+
+
+'''
 
   for i in range(0,len(mylist)):
     for j in range(i+1,len(mylist)):
@@ -16,6 +34,7 @@ def hashtable(mylist):
   return 0
   
 
-mylist = [2,1,1,2,3,4,5]
-x = hashtable(mylist)
+'''
+mylist = [2,1,2,3,4,5]
+x = func(mylist)
 print(x)
